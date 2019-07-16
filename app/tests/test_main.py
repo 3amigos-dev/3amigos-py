@@ -1,5 +1,5 @@
 """
-Test modules for pymodulenamegoeshere __main__
+Test modules for pymodulenamegoeshere.__main__
 """
 
 
