@@ -17,6 +17,6 @@ for PYVER in ${PYTHONVERS} ; do
   "python${PYVER}" -m isort -rc -c --diff "${MODULES[@]}"
   "python${PYVER}" -m bandit -r "${MODULES[@]}"
   find "${MODULES[@]}" -iname \*.py -print0 | xargs -0 -n 1 "${BASEDIR}/ci/in_docker/pylint.sh" "python${PYVER}"
-  "python${PYVER}" -m pytest --cov-config=.coveragerc --cov-fail-under=100 "--cov=${MAIN_MODULE}"
+  "python${PYVER}" -m pytest --cov-config=.coveragerc --cov-fail-under=100 "--cov=${MAIN_MODULE}" --cov-report=xml:test-cov.xml --cov-report=html
 done
 echo 'Testing Complete'
