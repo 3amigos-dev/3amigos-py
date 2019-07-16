@@ -1,6 +1,6 @@
 {
     "project_name":  "pymodulenamegoeshere",
-    "project_description": "descriptiongoeshere",
+    "project_description": "A GitHub Template Repository Generated via cookiecutter from https://github.com/3amigos-dev/cookiecutter-3amigos-py it can be used via the GitHub template but using the cookiecutter repository is more complicated but more provides a better outcome, see that repository for more details.",
     "project_slug":  "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
     "github_org": "yourgithuborggoeshere",
     "github_repo": "yourgithubrepogoeshere",
