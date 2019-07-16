@@ -1,5 +1,5 @@
-# 3amigos GitHub Template Repository
-Starting point for a python based 3amigos library project.
+# 3Amigos Python Github Template
+A GitHub Template Repository Generated via cookiecutter from https://github.com/3amigos-dev/cookiecutter-3amigos-py it can be used via the GitHub template but using the cookiecutter repository is more complicated but more provides a better outcome, see that repository for more details.
 
 Additional Documentation:
 * [News](NEWS.rst).
