@@ -10,7 +10,7 @@ import os
 import re
 
 # External Imports
-from setuptools import setup
+from setuptools import find_packages, setup
 
 PACKAGE_NAME = 'pymodulenamegoeshere'
 
@@ -62,7 +62,7 @@ setup(
     author_email='youremailgoeshere',
     maintainer='yournamegoeshere',
     maintainer_email='youremailgoeshere',
-    packages=[PACKAGE_NAME],
+    packages=find_packages(exclude=['tests']),
     license='GPLv3+',
     description=(
         'projectdescriptiongoeshere'

@@ -20,4 +20,5 @@ for PYVER in ${PYTHONVERS} ; do
   done
   # Display installation
   "python${PYVER}" -m pip freeze
+  "python${PYVER}" -m safety check
 done
