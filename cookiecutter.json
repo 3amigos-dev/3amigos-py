@@ -9,6 +9,7 @@
     "project_url": "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.github_repo }}",
     "py_modulename":  "{{ cookiecutter.project_slug }}",
     "community_name":  "{{ cookiecutter.project_name }}",
+    "dictionary": "en_AU",
     "docker_application_tagname": "app",
     "docker_workspace_dirname": "workspace",
     "docker_application_dirname": "{{ cookiecutter.docker_application_tagname }}",
