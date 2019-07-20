@@ -1,4 +1,4 @@
-pymodulenamegoeshere 0.1.0dev0 (2019-07-15)
+module_goes_here 0.1.0dev0 (2019-07-15)
 ======================================================
 
 Features

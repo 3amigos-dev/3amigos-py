@@ -111,3 +111,8 @@ venv.bak/
 
 # Pytest
 cov.xml
+/test-*.xml
+
+# Vim
+*.swp
+*.swo

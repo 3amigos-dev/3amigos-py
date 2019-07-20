@@ -8,5 +8,5 @@ BASEDIR="$( dirname "$( dirname "${THISDIR}" )" )"
 cp "${BASEDIR}/README.md" "${BASEDIR}/app/README.md"
 cp "${BASEDIR}/LICENSE" "${BASEDIR}/app/LICENSE"
 
-MAIN_MODULE="pymodulenamegoeshere"
+MAIN_MODULE="module_goes_here"
 MODULES=( "${MAIN_MODULE}" "tests" )
