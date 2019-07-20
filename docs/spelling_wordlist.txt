@@ -2,6 +2,7 @@ azurepipelines
 cookiecutter
 CookieCutter
 cov
+dev
 dlint
 isort
 md
@@ -13,8 +14,10 @@ pylint
 pyspelling
 pytest
 README
+reStructuredText
 setuptools
 sexualized
 socio
 towncrier
 xdist
+pymodulenamegoeshere
