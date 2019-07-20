@@ -8,7 +8,7 @@
 
 ## Reporting a Vulnerability
 
-Please report vulnerabilities to the project email youremailgoeshere.
+Please report vulnerabilities to the project email email_goes_here.
 Security vulnerabilities will be gratefully received, taken seriously and
 promptly addressed.
 

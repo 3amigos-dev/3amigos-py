@@ -20,4 +20,4 @@ sexualized
 socio
 towncrier
 xdist
-pymodulenamegoeshere
+module_goes_here
