@@ -59,9 +59,9 @@ setup(
     name=PACKAGE_NAME,
     version=read_version(),
     author='name_goes_here',
-    author_email='email_goes_here',
+    author_email='email@goes.here',
     maintainer='name_goes_here',
-    maintainer_email='email_goes_here',
+    maintainer_email='email@goes.here',
     packages=find_packages(exclude=['tests']),
     license='GPLv3+',
     description=(
