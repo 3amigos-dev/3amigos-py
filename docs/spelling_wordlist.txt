@@ -11,12 +11,14 @@ nosec
 parallelization
 py
 pylint
+PyPi
 pyspelling
 pytest
 README
 reStructuredText
 setuptools
 sexualized
+shellcheck
 socio
 towncrier
 xdist
