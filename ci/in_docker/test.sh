@@ -5,12 +5,14 @@ set -euxo pipefail
 THISDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BASEDIR="$( dirname "$( dirname "${THISDIR}" )" )"
 
-source ${BASEDIR}/ci/in_docker/prepare.sh
+# shellcheck source=/dev/null
+source "${BASEDIR}/ci/in_docker/prepare.sh"
 
+cd "${BASEDIR}"
+find . -iname \*.sh -print0 | xargs -0 shellcheck
 # Version independant checks
 PYVER=3.7
 # Run pyspelling in root to check docs
-cd "${BASEDIR}"
 "python${PYVER}" -m pyspelling
 cd "${BASEDIR}/app"
 # Version dependant checks
