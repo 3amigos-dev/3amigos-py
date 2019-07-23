@@ -5,6 +5,7 @@ A GitHub Template Repository Generated via cookiecutter from https://github.com/
 [![PyPi version](https://img.shields.io/pypi/v/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
 [![Python Versions](https://img.shields.io/pypi/pyversions/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
 [![PyPi downloads per month](https://img.shields.io/pypi/dm/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
+[![Documentation Status](https://readthedocs.org/projects/module_goes_here/badge/?version=latest)](https://module_goes_here.readthedocs.io/en/latest/?badge=latest)
 
 # Additional Documentation:
 * [News](NEWS.rst).

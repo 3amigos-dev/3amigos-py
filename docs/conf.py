@@ -35,8 +35,8 @@ def read_version():
     file_path = os.path.join(
         '..',
         'app',
-        'module_goes_here'
-        'version.py'
+        'module_goes_here',
+        'version.py',
     )
     regex = re.compile('__version__ = [\'\"]([^\'\"]*)[\'\"]')
     with codecs.open(file_path, encoding='utf-8') as fobj:

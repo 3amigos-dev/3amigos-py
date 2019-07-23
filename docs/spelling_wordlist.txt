@@ -21,6 +21,7 @@ pyspelling
 pytest
 rc
 README
+ReadTheDocs
 reStructuredText
 setuptools
 sexualized
