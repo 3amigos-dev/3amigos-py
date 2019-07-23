@@ -16,6 +16,7 @@
     "build_status_url": "https://dev.azure.com/timgates/timgates/_apis/build/status/3amigos-dev.3amigos-py?branchName=master",
     "build_url": "https://dev.azure.com/timgates/timgates/_build/latest?definitionId=6&branchName=master",
     "pypi_name": "{{ cookiecutter.project_name }}",
+    "readthedocs_name": "{{ cookiecutter.project_name }}",
     "author_email": "email@goes.here",
     "author_name": "name_goes_here",
     "maintainer_name": "{{ cookiecutter.author_name }}",
