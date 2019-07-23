@@ -8,6 +8,5 @@ BASEDIR="$( dirname "$( dirname "${THISDIR}" )" )"
 # shellcheck source=/dev/null
 source "${BASEDIR}/ci/in_docker/prepare.sh"
 
-PYVER=3.7
 cd "${BASEDIR}/docs"
 make html
