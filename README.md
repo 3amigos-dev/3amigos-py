@@ -8,6 +8,7 @@ A GitHub Template Repository Generated via cookiecutter from https://github.com/
 [![Documentation Status](https://readthedocs.org/projects/module_goes_here/badge/?version=latest)](https://module_goes_here.readthedocs.io/en/latest/?badge=latest)
 
 # Additional Documentation:
+* [Online Documentation](https://module_goes_here.readthedocs.io/en/latest/)
 * [News](NEWS.rst).
 * [Template Updates](COOKIECUTTER_UPDATES.md).
 * [Code of Conduct](CODE_OF_CONDUCT.md).
