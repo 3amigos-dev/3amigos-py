@@ -3,6 +3,7 @@ allgroups
 allprobes
 allsensors
 api
+Appveyor
 args
 assignees
 automodule
