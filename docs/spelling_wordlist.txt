@@ -69,7 +69,7 @@ PRTGDevice
 PRTGSensor
 py
 pylint
-PyPi
+PyPI
 pyruncompare
 pyspelling
 pytest
