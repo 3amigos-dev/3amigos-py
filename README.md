@@ -30,7 +30,7 @@ https://pypi.org/project/module_goes_here/
 
 Contributions are very welcome, consider using the
 [file an issue](https://github.com/3amigos-dev/3amigos/issues)
-to discuss the work before begining, but if you already have a Pull Request
+to discuss the work before beginning, but if you already have a Pull Request
 ready then this is no problem, please submit it and it will be very gratefully
 considered. The [Contribution Guidelines](CONTRIBUTING.md)
 outlines the module_goes_here commitment to ensuring all
