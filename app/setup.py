@@ -23,7 +23,7 @@ def load_readme(fname):
     with codecs.open(file_path, encoding='utf-8') as fobj:
         sub = (
             '(https://github.com/'
-            'github_organization_goes_here/github_repository_goes_here'
+            '3amigos-dev/3amigos'
             '/blob/master/\\g<1>)'
         )
         markdown_fixed = re.sub(
@@ -69,13 +69,13 @@ setup(
     ),
     long_description=load_readme('README.md'),
     long_description_content_type='text/markdown',
-    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
+    python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
     install_requires=[
         elem for elem in
         ''.split('\n')
         if elem
     ],
-    url='https://github.com/github_organization_goes_here/github_repository_goes_here',
+    url='https://github.com/3amigos-dev/3amigos',
     classifiers=[elem for elem in [
         'Development Status :: 4 - Beta',
         'Programming Language :: Python',
