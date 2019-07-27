@@ -69,7 +69,7 @@ setup(
     ),
     long_description=load_readme('README.md'),
     long_description_content_type='text/markdown',
-    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
+    python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
     install_requires=[
         elem for elem in
         ''.split('\n')

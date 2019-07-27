@@ -11,16 +11,40 @@
 
 A GitHub Template Repository Generated via cookiecutter from https://github.com/3amigos-dev/cookiecutter-3amigos-py it can be used via the GitHub template but using the cookiecutter repository is more complicated but provides a better outcome, see that repository for more details.
 
-# Available from PyPi.org
+# Installation
+
+You can install module_goes_here for
+(Python)[https://www.python.org/] via
+(pip)[https://pypi.org/project/pip/]
+from (PyPI)[https://pypi.org/].
+
+```
+$ pip install module_goes_here
+```
+
+# Download from PyPi.org
 
 https://pypi.org/project/module_goes_here/
 
-# Install
+# Contributing
 
-This library can be installed in (Python)[https://www.python.org/] via
-(Pip)[https://pypi.org/].
+Contributions are very welcome, consider using the
+(file an issue)[https://github.com/github_organization_goes_here/github_repository_goes_here/issues]
+to discuss the work before begining, but if you already have a Pull Request
+ready then this is no problem, please submit it and it will be very gratefully
+considered. The (Contribution Guidelines)[CONTRIBUTING.md]
+outlines the module_goes_here commitment to ensuring all
+contributions receive appropriate recognition.
 
-> pip install module_goes_here
+# License
+
+
+
+# Issues
+
+If you encounter any problems, please 
+(file an issue)[https://github.com/github_organization_goes_here/github_repository_goes_here/issues]
+along with a detailed description.
 
 # Additional Documentation:
 
