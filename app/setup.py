@@ -23,7 +23,7 @@ def load_readme(fname):
     with codecs.open(file_path, encoding='utf-8') as fobj:
         sub = (
             '(https://github.com/'
-            '3amigos-dev/3amigos'
+            '3amigos-dev/3amigos-py'
             '/blob/master/\\g<1>)'
         )
         markdown_fixed = re.sub(
@@ -75,7 +75,7 @@ setup(
         ''.split('\n')
         if elem
     ],
-    url='https://github.com/3amigos-dev/3amigos',
+    url='https://github.com/3amigos-dev/3amigos-py',
     classifiers=[elem for elem in [
         'Development Status :: 4 - Beta',
         'Programming Language :: Python',
