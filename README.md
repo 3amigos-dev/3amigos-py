@@ -45,10 +45,13 @@ contributions receive appropriate recognition.
 # License
 
 
+Distributed under the terms of the [GPLv3](https://opensource.org/licenses/GPL-3.0)
+license, "module_goes_here" is free and open source software
+
 
 # Issues
 
-If you encounter any problems, please 
+If you encounter any problems, please
 [file an issue](https://github.com/3amigos-dev/3amigos-py/issues)
 along with a detailed description.
 
