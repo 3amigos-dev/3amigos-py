@@ -2,7 +2,7 @@
 
 [![Azure Status](https://dev.azure.com/timgates/timgates/_apis/build/status/3amigos-dev.3amigos-py?branchName=master)](https://dev.azure.com/timgates/timgates/_build/latest?definitionId=6&branchName=master)
 [![Travis Status](https://travis-ci.org/3amigos-dev/3amigos-py.svg?branch=master)](https://travis-ci.org/3amigos-dev/3amigos-py)
-[![Appveyor Status](https://ci.appveyor.com/api/projects/status/github/3amigos-dev/3amigos-py/branch/master?svg=true)](https://ci.appveyor.com/project/3amigos-dev/3amigos-py)
+[![Appveyor Status](https://ci.appveyor.com/api/projects/status/github/appveyor_user_goes_here/3amigos-py/branch/master?svg=true)](https://ci.appveyor.com/project/appveyor_user_goes_here/3amigos-py)
 [![PyPI version](https://img.shields.io/pypi/v/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
 [![Python Versions](https://img.shields.io/pypi/pyversions/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
 [![PyPI downloads per month](https://img.shields.io/pypi/dm/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
