@@ -11,6 +11,12 @@
 
 A GitHub Template Repository Generated via cookiecutter from https://github.com/3amigos-dev/cookiecutter-3amigos-py it can be used via the GitHub template but using the cookiecutter repository is more complicated but provides a better outcome, see that repository for more details.
 
+![Logo](https://github.com/3amigos-dev/3amigos-py/raw/master/logo.png)
+
+
+More details can be found in the
+[Online Documentation.](https://module_goes_here.readthedocs.io/en/latest/)
+
 # Installation
 
 You can install module_goes_here for
