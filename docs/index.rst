@@ -9,6 +9,7 @@ Documentation for 3Amigos Python GitHub Template!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   installation
 
 
 
