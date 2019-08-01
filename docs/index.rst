@@ -14,7 +14,7 @@ What 3amigos-py Provides
 ========================
 
 3amigos-py is designed around providing a starting template to work on a
-python library or application with integrations into lots of open source CI
+python library or application with integration into lots of open source CI
 pipelines with static code analysis and build checks to ensure a minimum level
 of testing coverage. It starts with a minimum of 100% coverage but this can be
 lowered to suit the needs of the application.
