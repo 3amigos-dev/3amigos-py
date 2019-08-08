@@ -12,32 +12,27 @@ import re
 # External Imports
 from setuptools import find_packages, setup
 
-PACKAGE_NAME = 'module_goes_here'
-URL = 'https://github.com/3amigos-dev/3amigos-py'
+PACKAGE_NAME = "module_goes_here"
+URL = "https://github.com/3amigos-dev/3amigos-py"
+
 
 def load_include(fname, transform=False):
     """
     Read the contents of relative `README` file.
     """
     file_path = os.path.join(os.path.dirname(__file__), fname)
-    with codecs.open(file_path, encoding='utf-8') as fobj:
+    with codecs.open(file_path, encoding="utf-8") as fobj:
         data = fobj.read()
         if not transform:
             return data
         sub = (
-            '(https://github.com/'
-            '3amigos-dev/3amigos-py'
-            '/blob/master/\\g<1>)'
+            "(https://github.com/"
+            "3amigos-dev/3amigos-py"
+            "/blob/master/\\g<1>)"
         )
-        markdown_fixed = re.sub(
-            '[(]([^)]*[.](?:md|rst))[)]',
-            sub,
-            data
-        )
+        markdown_fixed = re.sub("[(]([^)]*[.](?:md|rst))[)]", sub, data)
         rst_fixed = re.sub(
-            '^[.][.] [_][`][^`]*[`][:] ([^)]*[.](?:md|rst))',
-            sub,
-            markdown_fixed
+            "^[.][.] [_][`][^`]*[`][:] ([^)]*[.](?:md|rst))", sub, markdown_fixed
         )
         return rst_fixed
 
@@ -46,50 +41,52 @@ def read_version():
     """
     Read the contents of relative file.
     """
-    file_path = os.path.join(
-        os.path.dirname(__file__), PACKAGE_NAME, 'version.py'
-    )
-    regex = re.compile('__version__ = [\'\"]([^\'\"]*)[\'\"]')
-    with codecs.open(file_path, encoding='utf-8') as fobj:
+    file_path = os.path.join(os.path.dirname(__file__), PACKAGE_NAME, "version.py")
+    regex = re.compile("__version__ = ['\"]([^'\"]*)['\"]")
+    with codecs.open(file_path, encoding="utf-8") as fobj:
         for line in fobj:
             mobj = regex.match(line)
             if mobj:
                 return mobj.group(1)
-    raise Exception('Failed to read version')
+    raise Exception("Failed to read version")
 
 
 setup(
     name=PACKAGE_NAME,
     version=read_version(),
-    author='name_goes_here',
-    author_email='email@goes.here',
-    maintainer='name_goes_here',
-    maintainer_email='email@goes.here',
-    packages=find_packages(exclude=['tests']),
-    license='GPLv3+',
-    description=load_include('short_description.txt')
-    long_description=load_include('README.md', transform=True),
-    long_description_content_type='text/markdown',
+    author="name_goes_here",
+    author_email="email@goes.here",
+    maintainer="name_goes_here",
+    maintainer_email="email@goes.here",
+    packages=find_packages(exclude=["tests"]),
+    license="GPLv3+",
+    description=load_include("short_description.txt"),
+    long_description=load_include("README.md", transform=True),
+    long_description_content_type="text/markdown",
     python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
     install_requires=[
-        elem.strip() for elem in
-        load_include('requirements.txt').splitlines(),
+        elem.strip()
+        for elem in load_include("requirements.txt").splitlines()
         if elem.strip()
     ],
     url=URL,
-    classifiers=[elem for elem in [
-        'Development Status :: 4 - Beta',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: Implementation :: CPython',
-        'Programming Language :: Python :: Implementation :: PyPy',
-        'Operating System :: OS Independent',
-        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
-    ] if elem],
+    classifiers=[
+        elem
+        for elem in [
+            "Development Status :: 4 - Beta",
+            "Programming Language :: Python",
+            "Programming Language :: Python :: 2",
+            "Programming Language :: Python :: 2.7",
+            "Programming Language :: Python :: 3",
+            "Programming Language :: Python :: 3.4",
+            "Programming Language :: Python :: 3.5",
+            "Programming Language :: Python :: 3.6",
+            "Programming Language :: Python :: 3.7",
+            "Programming Language :: Python :: Implementation :: CPython",
+            "Programming Language :: Python :: Implementation :: PyPy",
+            "Operating System :: OS Independent",
+            'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        ]
+        if elem
+    ],
 )
