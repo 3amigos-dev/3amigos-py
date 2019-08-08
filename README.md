@@ -8,6 +8,7 @@
 [![PyPI downloads per month](https://img.shields.io/pypi/dm/module_goes_here.svg)](https://pypi.org/project/module_goes_here)
 [![Documentation Status](https://readthedocs.org/projects/module_goes_here/badge/?version=latest)](https://module_goes_here.readthedocs.io/en/latest/?badge=latest)
 [![Coverage Status](https://coveralls.io/repos/github/3amigos-dev/3amigos-py/badge.svg)](https://coveralls.io/github/3amigos-dev/3amigos-py/)
+[![Black](https://camo.githubusercontent.com/28a51fe3a2c05048d8ca8ecd039d6b1619037326/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532307374796c652d626c61636b2d3030303030302e737667)](https://github.com/psf/black)
 
 A GitHub Template Repository Generated via cookiecutter from https://github.com/3amigos-dev/cookiecutter-3amigos-py it can be used via the GitHub template but using the cookiecutter repository is more complicated but provides a better outcome, see that repository for more details.
 
