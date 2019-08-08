@@ -14,7 +14,11 @@ from setuptools import find_packages, setup
 
 PACKAGE_NAME = "module_goes_here"
 URL = "https://github.com/3amigos-dev/3amigos-py"
-
+GITHUB_ORG = "3amigos-dev"
+GITHUB_REPO = "3amigos-py"
+RE_SUB = "(https://github.com/%s/%s/blob/master/\\g<1>)" % (
+    GITHUB_ORG, GITHUB_REPO
+)
 
 def load_include(fname, transform=False):
     """
@@ -25,14 +29,9 @@ def load_include(fname, transform=False):
         data = fobj.read()
         if not transform:
             return data
-        sub = (
-            "(https://github.com/"
-            "3amigos-dev/3amigos-py"
-            "/blob/master/\\g<1>)"
-        )
-        markdown_fixed = re.sub("[(]([^)]*[.](?:md|rst))[)]", sub, data)
+        markdown_fixed = re.sub("[(]([^)]*[.](?:md|rst))[)]", RE_SUB, data)
         rst_fixed = re.sub(
-            "^[.][.] [_][`][^`]*[`][:] ([^)]*[.](?:md|rst))", sub, markdown_fixed
+            "^[.][.] [_][`][^`]*[`][:] ([^)]*[.](?:md|rst))", RE_SUB, markdown_fixed
         )
         return rst_fixed
 
