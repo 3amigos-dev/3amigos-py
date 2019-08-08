@@ -18,6 +18,7 @@ GITHUB_ORG = "3amigos-dev"
 GITHUB_REPO = "3amigos-py"
 RE_SUB = "(https://github.com/%s/%s/blob/master/\\g<1>)" % (GITHUB_ORG, GITHUB_REPO)
 
+
 def load_include(fname, transform=False):
     """
     Read the contents of relative `README` file.
