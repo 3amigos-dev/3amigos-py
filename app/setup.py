@@ -13,14 +13,17 @@ import re
 from setuptools import find_packages, setup
 
 PACKAGE_NAME = 'module_goes_here'
+URL = 'https://github.com/3amigos-dev/3amigos-py'
 
-
-def load_readme(fname):
+def load_include(fname, transform=False):
     """
     Read the contents of relative `README` file.
     """
     file_path = os.path.join(os.path.dirname(__file__), fname)
     with codecs.open(file_path, encoding='utf-8') as fobj:
+        data = fobj.read()
+        if not transform:
+            return data
         sub = (
             '(https://github.com/'
             '3amigos-dev/3amigos-py'
@@ -29,7 +32,7 @@ def load_readme(fname):
         markdown_fixed = re.sub(
             '[(]([^)]*[.](?:md|rst))[)]',
             sub,
-            fobj.read(),
+            data
         )
         rst_fixed = re.sub(
             '^[.][.] [_][`][^`]*[`][:] ([^)]*[.](?:md|rst))',
@@ -64,18 +67,16 @@ setup(
     maintainer_email='email@goes.here',
     packages=find_packages(exclude=['tests']),
     license='GPLv3+',
-    description=(
-        '3Amigos Python GitHub Template'
-    ),
-    long_description=load_readme('README.md'),
+    description=load_include('short_description.txt')
+    long_description=load_include('README.md', transform=True),
     long_description_content_type='text/markdown',
     python_requires=">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
     install_requires=[
-        elem for elem in
-        ''.split('\n')
-        if elem
+        elem.strip() for elem in
+        load_include('requirements.txt').splitlines(),
+        if elem.strip()
     ],
-    url='https://github.com/3amigos-dev/3amigos-py',
+    url=URL,
     classifiers=[elem for elem in [
         'Development Status :: 4 - Beta',
         'Programming Language :: Python',
