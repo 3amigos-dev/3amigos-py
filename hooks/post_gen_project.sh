@@ -11,4 +11,5 @@ if [ ${#FILES[@]} -ne 0 ] ; then
     git checkout "${FILES[@]}"
 fi
 git checkout -- \
- docs/index.rst
+ docs/index.rst \
+ logo.png
