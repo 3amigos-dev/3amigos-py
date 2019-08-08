@@ -16,9 +16,7 @@ PACKAGE_NAME = "module_goes_here"
 URL = "https://github.com/3amigos-dev/3amigos-py"
 GITHUB_ORG = "3amigos-dev"
 GITHUB_REPO = "3amigos-py"
-RE_SUB = "(https://github.com/%s/%s/blob/master/\\g<1>)" % (
-    GITHUB_ORG, GITHUB_REPO
-)
+RE_SUB = "(https://github.com/%s/%s/blob/master/\\g<1>)" % (GITHUB_ORG, GITHUB_REPO)
 
 def load_include(fname, transform=False):
     """
@@ -84,7 +82,7 @@ setup(
             "Programming Language :: Python :: Implementation :: CPython",
             "Programming Language :: Python :: Implementation :: PyPy",
             "Operating System :: OS Independent",
-            'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+            "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         ]
         if elem
     ],
