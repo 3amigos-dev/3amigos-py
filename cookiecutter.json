@@ -43,5 +43,8 @@
         "GPLv3+",
         "MIT"
     ],
-    "entry_points": ""
+    "entry_points": "",
+    "package_data": "",
+    "extra_manifest": "",
+    "test_requires": ""
 }
