@@ -11,7 +11,8 @@ apk add --no-cache \
     hunspell hunspell-en \
     shellcheck \
     git \
-    libxslt-dev
+    libxslt-dev \
+    libffi-dev
 
 cd "${BASEDIR}/pip/${PYVER}"
 for reqfile in */requirements.txt ; do
