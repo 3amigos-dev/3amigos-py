@@ -12,7 +12,8 @@ apk add --no-cache \
     shellcheck \
     git \
     libxslt-dev \
-    libffi-dev
+    libffi-dev \
+    openssl-dev
 
 cd "${BASEDIR}/pip/${PYVER}"
 for reqfile in */requirements.txt ; do
