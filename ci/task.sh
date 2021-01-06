@@ -47,13 +47,11 @@ case "${CMD}" in
 test)
     for PYVER in "${PYVERS[@]}" ; do
         saveenv
-        docker_compose_run app "${IN_DOCKER}" "${@:2}"
+        docker_compose_run "app" "${IN_DOCKER}" "${@:2}"
     done
     ;;
 *)
     saveenv
-    docker_compose_run app "${IN_DOCKER}" "${@:2}"
+    docker_compose_run "app" "${IN_DOCKER}" "${@:2}"
     ;;
 esac
-
-
