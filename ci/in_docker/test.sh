@@ -10,8 +10,8 @@ source "${BASEDIR}/ci/in_docker/prepare.sh"
 
 cd "${BASEDIR}"
 find . -iname \*.sh -print0 | xargs -0 shellcheck
-# Run pyspelling in root to check docs
-"python${PYVER}" -m pyspelling
+# Run spelling in root to check docs
+"python${PYVER}" -m spelling
 # Run black to check all python
 "python${PYVER}" -m black --check --diff "${BASEDIR}"
 cd "${BASEDIR}/app"

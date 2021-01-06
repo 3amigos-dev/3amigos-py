@@ -1,4 +1,4 @@
-pyspelling
+spelling
 wcmatch<5.0
 resplendent
 unanimous
