@@ -6,13 +6,13 @@ THISDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BASEDIR="$( dirname "${THISDIR}" )"
 
 : [ "${PYVER:=3.9}" ]
-PYVERS=( "${PYVER}" "3.8" "3.7" "3.6" )
+PYVERS=( "3.9" "3.8" "3.7" "3.6" )
 
-if ! which docker ; then
+if ! command -v docker ; then
     echo 'Docker is missing!' >&2
     exit 1
 fi
-if ! which docker-compose ; then
+if ! command -v docker-compose ; then
     echo 'Docker-Compose is missing!' >&2
     exit 1
 fi
